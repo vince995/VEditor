@@ -1,58 +1,203 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>VEditor</title>
-        <meta name="description" content="VEditor un editeur de texte Simple, Léger et Rapide">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    </head>
-    
-    <body>
-        
-        <header>
-            
-            <a href="#"><img src="VEditor(128).png" alt="logo"/></a>
 
-            <a href="https://github.com/Oxther/VEditor" data-text="Télécharger" id="telecharger">Télécharger</a>
-   
-        </header>
-        
-        <section>
-            
-            <div id="wrapper-top">
-                <h1>Simple, Léger, Rapide</h1>
-                <h2>VEditor l'editeur qu'il vous faut!</h2>
-                <img src="VEditorCap2.png" alt="screen of VEditor" id="VEditorCap"/>
-                <div id="downloadBlock">
-                    <a href="https://github.com/Oxther/VEditor" id="telecharger2" data-text="Télécharger VEditor">Télécharger VEditor</a>
-                </div>
-                
-            </div>
-            
-        </section>  
-        
-        <section id="description">
-        
-            <p><strong>Codé en c++ avec Qt<br /></strong>VEditor a été codé en c++ un langage de programmation robuste et performant et Qt une bibliothèque c++ complète et multiplatformes. VEditor est donc téléchargable pour Windows et Linux</p>
-            
-            <p><strong>Rapide et léger<br /></strong>blal balbalbalba lalbalalalbalbal balblbl alballlbalablbalal blaallbalblalalba lballbalbla lalblbalbalbalbal balbblabl ablablablabla blbalbal balbalbalbalallbl lab lblablablballalblbala</p>
-            
-            <p><strong>Un logiciel libre<br /></strong>blalbalbalbalba lalbalalalbalbalb alblbl  alballlbalablbalalblaallbalblalal  balballbal blalalblb albalbalba lbalbblablablab  lablab  lablbalbal balbalbalbalallbll ablblab lablballa lblbala</p>
-            
-        </section>
-        
-        <footer>
-            
-            <a>coucou</a> 
-            
-            <a>coucou</a> 
-            
-            <a>coucou</a> 
-            
-        </footer>
-        
-    </body>
-</html>
+@font-face {
+    font-family: 'akrobat';
+    src: url('akrobat/Akrobat-Bold.otf');
+}
+
+
+
+header
+{
+    position: fixed;
+    top: 0px; 
+    right: 0px;   
+    left: 0px;    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);    
+    color: white;   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+header img
+{
+    height: 2.5em;
+    margin: .5em;
+}
+
+
+
+header #telecharger
+{
+    position: relative;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em 1em;
+    overflow: hidden;
+    border: .2em solid rgba(0, 200, 200, 1);
+    color: rgba(0, 200, 200, 1);
+    text-decoration: none;
+    transition: border-color .2s ease-out;
+}
+
+
+
+header #telecharger::before
+{
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    padding: .5em 1em;
+    background: rgba(0, 200, 200, 1);
+    color: white;
+    transform: translateY(-101%);
+    content: attr(data-text);
+    transition: transform .2s ease-out;
+}
+
+
+
+header #telecharger:hover::before
+{
+    transform: translateY(0);
+}
+
+
+
+body {
+    margin: 0px;
+}
+
+
+
+section {
+    margin-top: 4em;
+}
+
+
+
+html {
+    color: #0f0d0c;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+
+#VEditorCap {
+    display: block;
+    width: 580px;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+}
+
+#wrapper-top {
+    text-align: center;
+    position: absolute;
+    top: 4em;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+}
+
+#telecharger2 {
+    bottom: 40px;
+    font-size: 1.7em;
+    text-align: center;
+    width: 12em;
+    padding: .5em 1em;
+    border-radius: 2px;
+    background-color: #007676;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition: all .1s ease-out;
+    box-shadow: 0 5px 0 #009a9a;
+}
+
+
+
+#telecharger2:active {
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+
+
+/*#telecharger2::before
+{
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    padding: .5em 1em;
+    background: white;
+    color: rgba(0, 200, 200, 1);
+    transform: translateX(-101%);
+    content: attr(data-text);
+    transition: transform .3s ease-out;
+}
+
+
+
+#telecharger2:hover::before
+{
+    transform: translateX(0);
+}*/
+
+
+
+#deco {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width:  100%;
+    height: 8em;;
+}
+
+#sectionBlue {
+    background-color: rgba(0, 200, 200, 1);
+    margin-top: 0em;
+}
+
+#description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 600px;
+    background-color: rgba(0, 200, 200, 1);
+    padding: 2em;
+    text-align: center;
+}
+
+
+
+#description p{
+    font-size: 1em;
+    padding: 2em;
+}
+
+
+
+h1, h2 {
+    letter-spacing: 0.15em;
+    font-size: 2em;
+    font-family: 'akrobat';
+}
+
+#downloadBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8em;
+    background-color: rgba(0, 200, 200, 1);
+}
+
+strong {
+    display: block;
+    font-size: 1.5em;
+    font-family: akrobat;
+    margin-bottom: 1em;
+}
