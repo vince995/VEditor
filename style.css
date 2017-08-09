@@ -115,6 +115,7 @@ html {
     text-decoration: none;
     transition: all .1s ease-out;
     box-shadow: 0 5px 0 #009a9a;
+    width: 100%;
 }
 
 
