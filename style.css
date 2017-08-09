@@ -115,7 +115,6 @@ html {
     text-decoration: none;
     transition: all .1s ease-out;
     box-shadow: 0 5px 0 #009a9a;
-    width: 100%;
 }
 
 
@@ -169,6 +168,7 @@ html {
     background-color: rgba(0, 200, 200, 1);
     padding: 2em;
     text-align: center;
+    width: 100%;
 }
 
 
