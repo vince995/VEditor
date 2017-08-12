@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'akrobat';
-    src: url('Akrobat-Bold.otf');
+    src: url('akrobat/Akrobat-Bold.otf');
 }
 
 
@@ -103,12 +103,14 @@ html {
     z-index: -1;
 }
 
-#telecharger2 {
+.telecharger2 {
     bottom: 40px;
-    font-size: 1.7em;
+    font-size: 1.2em;
     text-align: center;
     width: 12em;
     padding: .5em 1em;
+    margin-left: 20px;
+    margin-right: 20px
     border-radius: 2px;
     background-color: #007676;
     color: rgba(255, 255, 255, 1);
@@ -119,7 +121,7 @@ html {
 
 
 
-#telecharger2:active {
+.telecharger2:active {
     box-shadow: none;
     margin-top: 10px;
 }
@@ -167,6 +169,8 @@ html {
     background-color: rgba(0, 200, 200, 1);
     padding: 2em;
     text-align: center;
+    color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -174,6 +178,9 @@ html {
 #description p{
     font-size: 1em;
     padding: 2em;
+    width: 15em;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
 }
 
 
@@ -200,4 +207,21 @@ strong {
     font-size: 1.5em;
     font-family: akrobat;
     margin-bottom: 1em;
+}
+
+
+
+footer h1 {
+    font-size: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 20em;
+    background-color: cornflowerblue;
+}
+
+footer section {
+    margin: 2em;
 }
