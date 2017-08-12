@@ -12,7 +12,26 @@
     
     <body>
         
-        <?php include_once("analyticstracking.php") ?>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-104312452-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
         
         <header>
             
@@ -29,7 +48,8 @@
                 <h2>VEditor l'editeur qu'il vous faut!</h2>
                 <img src="VEditorCap2.png" alt="screen of VEditor" id="VEditorCap"/>
                 <div id="downloadBlock">
-                    <a href="https://github.com/Oxther/VEditor" id="telecharger2" data-text="Télécharger VEditor">Télécharger VEditor</a>
+                    <a href="VEditor.deb" class="telecharger2" data-text="Télécharger VEditor">Télécharger VEditor.exe (Alpha)</a>
+                    <a href="VEditor.deb" class="telecharger2" data-text="Télécharger VEditor">Télécharger VEditor.deb (Alpha)</a>
                 </div>
                 
             </div>
@@ -42,30 +62,34 @@
             
             <p><strong>Rapide et léger<br /></strong>VEditor a été conçu pour être Rapide et léger, il y a seulement ce qu'il faut pour éditer et mettre en forme un texte, il l'enregistre en html et le rouvre au format rich text pour que vous puissiez l'éditer, et rien de plus.</p>
             
-            <p><strong>Un logiciel libre<br /></strong>VEditor est un logiciel libre ce qui veux dire que vous pouvez le télécharger le modifier et le partager autant de fois que vous le souhaiter et c'est même encouragé.</p>
+            <p><strong>Un logiciel libre<br /></strong>VEditor est un logiciel libre ce qui veux dire que vous pouvez le télécharger le modifier et le partager autant de fois que vous le souhaitez et c'est même encouragé.</p>
             
         </section>
         
         <footer>
             
-            <a>coucou</a> 
+            <section>
             
-            <a>coucou</a> 
+                <h1>Information relative<br /> a VEditor</h1>
+                <a href="https://www.qt.io/">Site de Qt</a>
+                <a href="https://fr.wikipedia.org/wiki/C%2B%2B">Wikipedia C++</a>
             
-            <a>coucou</a> 
+            </section>
+            
+            <section>
+                
+                <h1>Réseaux sociaux</h1>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="200px" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                
+            </section>
+            
+            <section>
+            
+                <h1>Me contacter</h1>
+                
+            </section>
             
         </footer>
-        
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-104312452-1', 'auto');
-          ga('send', 'pageview');
-
-        </script>
         
     </body>
 </html>
