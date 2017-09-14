@@ -132,6 +132,10 @@ html {
 }
 
 
+.fb-like {
+    margin: 3px;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
